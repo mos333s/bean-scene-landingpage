@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap");
+.header {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent), url("../../../assets/coffee_image.png");
+  background-size: cover;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 34px;
+}
+.header__nav-logo {
+  font-family: "Clicker Script", regular;
+  font-size: 35px;
+  color: #FFFFFF;
+  margin-left: 93px;
+}
+.header__nav-link {
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  color: #FFFFFF;
+  padding: 60px;
+}
+.header__nav-auth {
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  color: #FFFFFF;
+  padding: 35px;
+}
+.header__nav-button {
+  border: none;
+  border-radius: 24px;
+  background-color: #F9C06A;
+  width: 100px;
+  height: 48px;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  margin-right: 93px;
+}
+.header__nav-button:hover {
+  background-color: #FACD89;
+  transition: 0.3s ease;
+}
+.header__hero {
+  margin-left: 93px;
+  padding-bottom: 95px;
+  padding-top: 130px;
+}
+.header__desc {
+  display: flex;
+  flex-direction: column;
+}
+.header__text--intro {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  color: #FFFFFF;
+}
+.header__accent {
+  font-family: "Clicker Script", regular;
+  font-size: 220px;
+  color: #FFFFFF;
+}
+.header__text {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.header__button {
+  border: none;
+  border-radius: 24px;
+  background-color: #F9C06A;
+  width: 134px;
+  height: 48px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.header__button:hover {
+  background-color: #FACD89;
+  transition: 0.3s ease;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}

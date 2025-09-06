@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+
+// Function that converts pixels in rem units
+// @param pixels - value in pixels
+@function rem($pixels) {
+    @return ($pixels / 16) * 1rem;
+}
+
+// Fonts
+$font-main: 'Playfair Display', serif;
+$font-accent: 'Clicker Script', regular;
+
+// Colors
+$button-color: #F9C06A;
+$button-hover: #FACD89;
+$main: #FFFFFF;
+$secondary: #707070;
+$accent: #603809;
+
+// Sizes
+$border-radius: 24px;
+$font-size: 20px;

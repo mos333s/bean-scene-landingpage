@@ -1,0 +1,97 @@
+@use '../variables' as var;
+
+.header {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent),
+                  url('../../../assets/coffee_image.png');
+    background-size: cover;
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 34px;
+    }
+
+    &__nav-logo {
+        font-family: var.$font-accent;
+        font-size: 35px;
+        color: var.$main;
+        margin-left: 93px;
+    }
+
+    &__nav-link {
+        font-family: var.$font-main;
+        font-size: 14px;
+        color: var.$main;
+        padding: 60px;
+    }
+
+    &__nav-auth {
+        font-family: var.$font-main;
+        font-size: 14px;
+        color: var.$main;
+        padding: 35px;
+    }
+
+    &__nav-button {
+        border: none;
+        border-radius: var.$border-radius;
+        background-color: var.$button-color;
+        width: 100px;
+        height: 48px;
+        font-family: var.$font-main;
+        font-size: 14px;
+        margin-right: 93px;
+    }
+
+    &__nav-button:hover {
+        background-color: var.$button-hover;
+        transition: 0.3s ease;
+    }
+
+    &__hero {
+        margin-left: 93px;
+        padding-bottom: 95px;
+        padding-top: 130px;
+    }
+
+    &__desc {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text--intro {
+        font-family: var.$font-main;
+        font-size: 22px;
+        color: var.$main;
+    }
+
+    &__accent {
+        font-family: var.$font-accent;
+        font-size: 220px;
+        color: var.$main;
+    }
+
+    &__text {
+        font-family: var.$font-main;
+        font-size: var.$font-size;
+        color: var.$main;
+    }
+
+    &__button {
+        border: none;
+        border-radius: var.$border-radius;
+        background-color: var.$button-color;
+        width: 134px;
+        height: 48px;
+        font-family: var.$font-main;
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    &__button:hover {
+        background-color: var.$button-hover;
+        transition: 0.3s ease;
+    }
+}
