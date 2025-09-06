@@ -1,0 +1,25 @@
+// Text styling mixin
+// Provides consistent typography setting
+// @param family - font family
+// @param size - font size value
+// @param color - font color value
+@mixin text($family, $size, $color) {
+    font-family: $family;
+    font-size: $size;
+    color: $color;
+}
+
+@mixin button($family, $size, $color, $radius, $bg-color, $w, $h, $hover-color) {
+    @include text($family, $size, $color);
+    border: none;
+    border-radius: $radius;
+    background-color: $bg-color;
+    width: $w;
+    height: $h;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $hover-color;
+        transition: 0.3s ease;
+    }
+}
