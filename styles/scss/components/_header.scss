@@ -10,41 +10,41 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 34px;
+        padding-top: var.rem(34);
     }
 
     &__nav-logo {
-        @include mix.text(var.$font-accent, 35px, var.$main);
-        margin-left: 93px;
+        @include mix.text(var.$font-accent, var.rem(35), var.$main);
+        margin-left: var.rem(93);
     }
 
     &__nav-link {
-        @include mix.text(var.$font-main, 14px, var.$main);
-        padding: 60px;
+        @include mix.text(var.$font-main, var.rem(14), var.$main);
+        padding: var.rem(60);
     }
 
     &__nav-auth {
-        @include mix.text(var.$font-main, 14px, var.$main);
-        padding: 35px;
+        @include mix.text(var.$font-main, var.rem(14), var.$main);
+        padding: var.rem(35);
     }
 
     &__nav-button {
         @include mix.button(
             var.$font-main, 
-            14px, 
+            var.rem(14), 
             #000, 
             var.$border-radius,
             var.$button-color, 
-            100px, 
-            48px,
+            var.rem(100), 
+            var.rem(48),
             var.$button-hover);
-        margin-right: 93px;
+        margin-right: var.rem(93);
     }
 
     &__hero {
-        margin-left: 93px;
-        padding-bottom: 95px;
-        padding-top: 130px;
+        margin-left: var.rem(93);
+        padding-bottom: var.rem(95);
+        padding-top: var.rem(130);
     }
 
     &__desc {
@@ -53,11 +53,11 @@
     }
 
     &__text--intro {
-        @include mix.text(var.$font-main, 22px, var.$main);
+        @include mix.text(var.$font-main, var.rem(22), var.$main);
     }
 
     &__accent {
-        @include mix.text(var.$font-accent, 220px, var.$main);
+        @include mix.text(var.$font-accent, var.rem(220), var.$main);
     }
 
     &__text {
@@ -67,14 +67,14 @@
     &__button {
         @include mix.button(
             var.$font-main, 
-            16px, 
+            var.rem(16), 
             #000, 
             var.$border-radius,
             var.$button-color, 
-            134px, 
-            48px,
+            var.rem(134), 
+            var.rem(48),
             var.$button-hover);
         font-weight: bold;
-        margin-top: 20px;
+        margin-top: var.rem(20);
     }
 }
