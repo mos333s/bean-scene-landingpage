@@ -1,0 +1,65 @@
+@use 'sass:color';
+
+@use '../variables' as var;
+@use '../mixins' as mix;
+
+.banner {
+    background-image: url('../../../assets/bg_coffee.png');
+    background-size: cover;
+    background-color: color.adjust(var.$accent, $alpha: 0.8);
+    background-blend-mode: soft-light;
+    margin-top: var.rem(82);
+    display: flex;
+    flex-direction: row;
+
+    &__content {
+        position: relative;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        margin-left: var.rem(93);
+    }
+
+    &__title {
+        @include mix.text(var.$font-main, var.rem(54), var.$main);
+        font-weight: bold;
+        margin-top: var.rem(135);
+    }
+
+    &__text {
+        @include mix.text(var.$font-main, var.$font-size, var.$main);
+        margin-top: var.rem(22);
+        line-height: var.rem(34);
+    }
+
+    &__button {
+        @include mix.button(
+            var.$font-main,
+            var.$button-font-size, 
+            var.$button-text-color, 
+            var.$border-radius, 
+            var.$button-color, 
+            var.$button-width, 
+            var.$button-height, 
+            var.$button-hover
+        );
+        font-weight: bold;
+        margin-top: var.rem(22);
+    }
+
+    &__decoration-cup {
+        margin-left: var.rem(370);
+        margin-top: var.rem(54);
+        margin-bottom: var.rem(53);
+        z-index: 2;
+    }
+
+    &__decoration-beans {
+        position: absolute;
+        right: 0;
+        margin-top: var.rem(23);
+        z-index: 1;
+    }
+}
