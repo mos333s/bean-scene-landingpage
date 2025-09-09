@@ -4,7 +4,7 @@
 // Function that converts pixels in rem units
 // @param pixels - value in pixels
 @function rem($pixels) {
-    @return ($pixels / 16) * 1rem;
+    @return calc($pixels / 16) * 1rem;
 }
 
 // Fonts
@@ -14,10 +14,14 @@ $font-accent: 'Clicker Script', regular;
 // Colors
 $button-color: #F9C06A;
 $button-hover: #FACD89;
+$button-text-color: #1E1E1E;
 $main: #FFFFFF;
 $secondary: #707070;
 $accent: #603809;
 
 // Sizes
 $border-radius: 24px;
+$button-width: rem(134);
+$button-height: rem(48);
+$button-font-size: rem(16);
 $font-size: rem(20);

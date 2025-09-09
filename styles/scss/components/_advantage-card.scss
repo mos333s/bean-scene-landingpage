@@ -1,0 +1,29 @@
+@use '../variables' as var;
+@use '../mixins' as mix;
+
+.advantage-card {
+    background: #FFF9F1;
+    border: 1px solid;
+    border-color: #F9C06A;
+    width: var.rem(280);
+    height: var.rem(284);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__icon {
+        margin-top: var.rem(36);
+    }
+
+    &__title {
+        @include mix.text(var.$font-main, var.rem(28), var.$accent);
+        font-weight: bold;
+        margin-top: var.rem(25);
+    }
+
+    &__desc {
+        @include mix.text(var.$font-main, var.$font-size, var.$secondary);
+        margin-top: var.rem(8);
+        text-align: center;
+    }
+}

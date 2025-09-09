@@ -1,0 +1,49 @@
+@use '../variables' as var;
+@use '../mixins' as mix;
+
+.product-card {
+    background: #FFF9F1;
+    border: 1px solid;
+    border-color: #F9C06A;
+    min-width: 0;
+    width: var.rem(280);
+    height: var.rem(364);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var.rem(32);
+
+    &__title {
+        @include mix.text(var.$font-main, var.rem(22), var.$accent);
+        font-weight: bold;
+        margin-top: var.rem(14);
+    }
+
+    &__composition {
+        @include mix.text(var.$font-main, var.rem(16), #1E1E1E);
+        margin-top: var.rem(6);
+    }
+
+    &__price {
+        @include mix.text(var.$font-main, var.rem(18), var.$accent);
+        font-weight: bold;
+        margin-top: var.rem(6);
+    }
+
+    &__button {
+        @include mix.button(
+            var.$font-main, 
+            var.$button-font-size, 
+            var.$button-text-color, 
+            var.$border-radius, 
+            var.$button-color, 
+            var.$button-width, 
+            var.$button-height,
+            var.$button-hover
+        );
+        font-weight: bold;
+        position: absolute;
+        bottom: calc(var.rem(-30));
+    }
+}

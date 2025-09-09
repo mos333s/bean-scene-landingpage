@@ -2,6 +2,9 @@
 @use 'mixins';
 
 @use 'components/header';
+@use 'components/main';
+@use 'components/product-card';
+@use 'components/advantage-card';
 
 * {
     padding: 0;

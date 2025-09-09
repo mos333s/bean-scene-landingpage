@@ -1,0 +1,134 @@
+@use '../variables' as var;
+@use '../mixins' as mix;
+
+.main {
+    &__content {
+        position: relative;
+    }
+
+    &__promo {
+        display: flex;
+        flex-direction: row;
+        margin-top: var.rem(150);
+    }
+
+    &__promo-info {
+        margin-right: var.rem(95);
+        margin-left: var.rem(93);
+    }
+
+    &__promo-desc {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__promo-text--intro {
+        @include mix.text(var.$font-main, var.rem(54), var.$accent);
+        font-weight: bold;
+    }
+
+    &__promo-text {
+        @include mix.text(var.$font-main, var.$font-size, var.$secondary);
+        line-height: var.rem(34);
+        margin-top: var.rem(29);
+    }
+
+    &__promo-button {
+        @include mix.button(
+            var.$font-main, 
+            var.$button-font-size, 
+            var.$button-text-color, 
+            var.$border-radius, 
+            var.$button-color, 
+            var.$button-width, 
+            var.$button-height,
+            var.$button-hover
+        );
+        font-weight: bold;
+        margin-top: var.rem(29);
+    }
+
+    &__decoration--left {
+        position: absolute;
+        margin-top: var.rem(-200);
+    }
+
+    &__products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: var.rem(82);
+    }
+
+    &__products-subtitle {
+        @include mix.text(var.$font-main, var.rem(54), var.$accent);
+        font-weight: bold;
+    }
+
+    &__products-desc {
+        @include mix.text(var.$font-main, var.$font-size, var.$secondary);
+        margin-top: var.rem(16);
+    }
+
+    &__products-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var.rem(20);
+    }
+
+    &__decoration--right {
+        position: absolute;
+        margin-top: var.rem(-80);
+        right: 0;
+        transform: scaleX(-1);
+    }
+
+    &__advantages {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: var.rem(82);
+    }
+
+    &__advantages-subtitle {
+        @include mix.text(var.$font-main, var.rem(54), var.$accent);
+        font-weight: bold;
+    }
+
+    &__advantages-desc {
+        @include mix.text(var.$font-main, var.$font-size, var.$secondary);
+        margin-top: var.rem(16);
+    }
+
+    &__advantages-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var.rem(20);
+        margin-top: var.rem(32);
+    }
+
+    &__advantages-slogan {
+        @include mix.text(var.$font-main, var.$font-size, var.$secondary);
+        margin-top: var.rem(32);
+    }
+
+    &__advantages-cta {
+        @include mix.text(var.$font-main, var.rem(30), var.$accent);
+        font-weight: bold;
+    }
+
+    &__advantages-button {
+        @include mix.button(
+            var.$font-main, 
+            var.$button-font-size, 
+            var.$button-text-color, 
+            var.$border-radius,
+            var.$button-color, 
+            var.$button-width, 
+            var.$button-height, 
+            var.$button-hover
+        );
+        font-weight: bold;
+        margin-top: var.rem(24);
+    }
+}
