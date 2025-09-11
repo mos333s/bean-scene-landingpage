@@ -466,6 +466,79 @@
   transform: scaleX(-1);
 }
 
+.contact-us {
+  background-image: url("../../../assets/bg_coffee.png");
+  background-size: cover;
+  background-color: #603809;
+  background-blend-mode: soft-light;
+}
+.contact-us__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5.125rem;
+}
+.contact-us__title {
+  font-family: "Playfair Display", serif;
+  font-size: 3.375rem;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin-top: 5rem;
+}
+.contact-us__cta {
+  font-family: "Playfair Display", serif;
+  font-size: 1.25rem;
+  color: #FFFFFF;
+  line-height: 2.125rem;
+  margin-top: 1rem;
+}
+.contact-us__form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.625rem;
+  margin-bottom: 5rem;
+}
+.contact-us__input-wrapper {
+  position: relative;
+  width: 40.125rem;
+  height: 4.125rem;
+}
+.contact-us__input {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 1.625rem;
+  font-size: 1.25rem;
+}
+.contact-us__input:focus ~ .contact-us__label, .contact-us__input:not(:placeholder-shown) ~ .contact-us__label {
+  display: none;
+}
+.contact-us__label {
+  position: absolute;
+  left: 1.625rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-family: "Playfair Display", serif;
+  font-size: 1.25rem;
+  color: #707070;
+}
+.contact-us__button {
+  border: none;
+  width: 8.5625rem;
+  height: 4.125rem;
+  background-color: #F9C06A;
+  font-family: "Playfair Display", serif;
+  font-size: 1.375rem;
+  color: #1E1E1E;
+  font-weight: bold;
+  cursor: pointer;
+}
+.contact-us__button:hover {
+  transition: 0.3s ease;
+  background-color: #FACD89;
+}
+
 * {
   padding: 0;
   margin: 0;

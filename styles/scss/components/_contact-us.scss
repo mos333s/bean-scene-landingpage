@@ -1,0 +1,80 @@
+@use 'sass:color';
+
+@use '../variables' as var;
+@use '../mixins' as mix;
+
+.contact-us {
+    background-image: url('../../../assets/bg_coffee.png');
+    background-size: cover;
+    background-color: color.adjust(var.$accent, $alpha: 0.8);
+    background-blend-mode: soft-light;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: var.rem(82);
+    }
+
+    &__title {
+        @include mix.text(var.$font-main, var.rem(54), var.$main);
+        font-weight: bold;
+        margin-top: var.rem(80);
+    }
+
+    &__cta {
+        @include mix.text(var.$font-main, var.$font-size, var.$main);
+        line-height: var.rem(34);
+        margin-top: var.rem(16);
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: row;
+        margin-top: var.rem(26);
+        margin-bottom: var.rem(80);
+    }
+
+    &__input-wrapper {
+        position: relative;
+        width: var.rem(642);
+        height: var.rem(66);
+    }
+
+    &__input {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 0 var.rem(26);
+        font-size: var.$font-size;
+        
+        &:focus ~ .contact-us__label,
+        &:not(:placeholder-shown) ~ .contact-us__label {
+            display: none;
+        }
+    }
+
+    &__label {
+        position: absolute;
+        left: var.rem(26);
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        @include mix.text(var.$font-main, var.$font-size, var.$secondary);
+    }
+
+    &__button {
+        border: none;
+        width: var.rem(137);
+        height: var.rem(66);
+        background-color: var.$button-color;
+        @include mix.text(var.$font-main, var.rem(22), var.$button-text-color);
+        font-weight: bold;
+        cursor: pointer;
+
+        &:hover {
+            transition: 0.3s ease;
+            background-color: var.$button-hover;
+        }
+    }
+}
