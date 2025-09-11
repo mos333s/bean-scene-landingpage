@@ -1,0 +1,112 @@
+@use '../variables' as var;
+@use '../mixins' as mix;
+
+.feedback {
+    margin-top: var.rem(82);
+
+    &__content {
+        position: relative;
+    }
+
+    &__title, &__desc {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__title {
+        @include mix.text(var.$font-main, var.rem(54), var.$accent);
+        font-weight: bold;
+    }
+
+    &__desc {
+        @include mix.text(var.$font-main, var.$font-size, var.$secondary);
+        margin-top: var.rem(16);
+    }
+
+    &__card {
+        background: #FFF9F1;
+        border: 1px solid;
+        border-color: #F9C06A;
+        margin-top: var.rem(45);
+        margin-left: var.rem(193);
+        margin-right: var.rem(193);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    &__quote {
+        @include mix.text(var.$font-main, var.rem(220), var.$accent);
+        font-weight: bold;
+        margin-left: var.rem(29);
+        position: absolute;
+    }
+
+    &__text {
+        @include mix.text(var.$font-main, var.rem(18), var.$secondary);
+        font-weight: 600;
+        text-align: center;
+        margin-top: var.rem(129);
+        line-height: var.rem(36);
+    }
+
+    &__author {
+        @include mix.text(var.$font-main, var.rem(32), var.$accent);
+        font-weight: bold;
+        text-align: center;
+        margin-top: var.rem(28);
+    }
+
+    &__position {
+        @include mix.text(var.$font-main, var.$font-size, var.$secondary);
+        text-align: center;
+        margin-top: var.rem(4);
+        margin-bottom: var.rem(101);
+    }
+
+    &__image {
+        position: absolute;
+        bottom: calc(var.rem(-50));
+        left: calc(var.rem(510))
+    }
+
+    &__button--left, &__button--right {
+        position: absolute;
+        border: none;
+        border-radius: var.$border-radius;
+        background-color: var.$button-color;
+        width: var.rem(82);
+        height: var.rem(82);
+        cursor: pointer;
+
+        &:hover {
+            background-color: var.$button-hover;
+            transition: 0.3s ease;
+        }
+    }
+
+    &__button--left {
+        left: calc(var.rem(-50));
+        bottom: calc(var.rem(200));
+    }
+
+    &__button--right {
+        right: calc(var.rem(-50));
+        bottom: calc(var.rem(200));
+    }
+
+    &__decoration--left {
+        position: absolute;
+        margin-top: var.rem(-200);
+        transform: scaleY(-1);
+    }
+
+    &__decoration--right {
+        position: absolute;
+        right: 0;
+        margin-top: var.rem(-620);
+        transform: scaleX(-1);
+    }
+
+}

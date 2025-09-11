@@ -361,6 +361,111 @@
   z-index: 1;
 }
 
+.feedback {
+  margin-top: 5.125rem;
+}
+.feedback__content {
+  position: relative;
+}
+.feedback__title, .feedback__desc {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.feedback__title {
+  font-family: "Playfair Display", serif;
+  font-size: 3.375rem;
+  color: #603809;
+  font-weight: bold;
+}
+.feedback__desc {
+  font-family: "Playfair Display", serif;
+  font-size: 1.25rem;
+  color: #707070;
+  margin-top: 1rem;
+}
+.feedback__card {
+  background: #FFF9F1;
+  border: 1px solid;
+  border-color: #F9C06A;
+  margin-top: 2.8125rem;
+  margin-left: 12.0625rem;
+  margin-right: 12.0625rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.feedback__quote {
+  font-family: "Playfair Display", serif;
+  font-size: 13.75rem;
+  color: #603809;
+  font-weight: bold;
+  margin-left: 1.8125rem;
+  position: absolute;
+}
+.feedback__text {
+  font-family: "Playfair Display", serif;
+  font-size: 1.125rem;
+  color: #707070;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 8.0625rem;
+  line-height: 2.25rem;
+}
+.feedback__author {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: #603809;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1.75rem;
+}
+.feedback__position {
+  font-family: "Playfair Display", serif;
+  font-size: 1.25rem;
+  color: #707070;
+  text-align: center;
+  margin-top: 0.25rem;
+  margin-bottom: 6.3125rem;
+}
+.feedback__image {
+  position: absolute;
+  bottom: -3.125rem;
+  left: 31.875rem;
+}
+.feedback__button--left, .feedback__button--right {
+  position: absolute;
+  border: none;
+  border-radius: 24px;
+  background-color: #F9C06A;
+  width: 5.125rem;
+  height: 5.125rem;
+  cursor: pointer;
+}
+.feedback__button--left:hover, .feedback__button--right:hover {
+  background-color: #FACD89;
+  transition: 0.3s ease;
+}
+.feedback__button--left {
+  left: -3.125rem;
+  bottom: 12.5rem;
+}
+.feedback__button--right {
+  right: -3.125rem;
+  bottom: 12.5rem;
+}
+.feedback__decoration--left {
+  position: absolute;
+  margin-top: -12.5rem;
+  transform: scaleY(-1);
+}
+.feedback__decoration--right {
+  position: absolute;
+  right: 0;
+  margin-top: -38.75rem;
+  transform: scaleX(-1);
+}
+
 * {
   padding: 0;
   margin: 0;
