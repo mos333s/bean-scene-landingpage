@@ -4,7 +4,7 @@
 @use '../mixins' as mix;
 
 .footer {
-    background-image: url('../../../assets/fotter_image.png');
+    background-image: url('../../../assets/backgrounds/fotter_image.png');
     background-size: cover;
     background-color: color.adjust(var.$accent, $alpha: 0.8);
     background-blend-mode: soft-light;

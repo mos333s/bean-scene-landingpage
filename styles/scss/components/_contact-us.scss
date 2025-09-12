@@ -4,7 +4,7 @@
 @use '../mixins' as mix;
 
 .contact-us {
-    background-image: url('../../../assets/bg_coffee.png');
+    background-image: url('../../../assets/backgrounds/bg_coffee.png');
     background-size: cover;
     background-color: color.adjust(var.$accent, $alpha: 0.8);
     background-blend-mode: soft-light;

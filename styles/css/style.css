@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap");
 .header {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent), url("../../../assets/coffee_image.png");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent), url("../../../assets/backgrounds/coffee_image.png");
   background-size: cover;
 }
 .header__nav {
@@ -301,7 +301,7 @@
 }
 
 .banner {
-  background-image: url("../../../assets/bg_coffee.png");
+  background-image: url("../../../assets/backgrounds/bg_coffee.png");
   background-size: cover;
   background-color: #603809;
   background-blend-mode: soft-light;
@@ -467,7 +467,7 @@
 }
 
 .contact-us {
-  background-image: url("../../../assets/bg_coffee.png");
+  background-image: url("../../../assets/backgrounds/bg_coffee.png");
   background-size: cover;
   background-color: #603809;
   background-blend-mode: soft-light;
@@ -540,7 +540,7 @@
 }
 
 .footer {
-  background-image: url("../../../assets/fotter_image.png");
+  background-image: url("../../../assets/backgrounds/fotter_image.png");
   background-size: cover;
   background-color: #603809;
   background-blend-mode: soft-light;
