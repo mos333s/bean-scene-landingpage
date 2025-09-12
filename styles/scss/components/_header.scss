@@ -7,10 +7,15 @@
     background-size: cover;
 
     &__nav {
+        position: fixed;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: var.rem(34);
+        padding-top: var.rem(5);
+        padding-bottom: var.rem(5);
+        width: 100%;
+        z-index: 1000;
+        background-color: #000;
     }
 
     &__nav-logo {

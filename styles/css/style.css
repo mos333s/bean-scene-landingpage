@@ -5,10 +5,15 @@
   background-size: cover;
 }
 .header__nav {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 2.125rem;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  width: 100%;
+  z-index: 1000;
+  background-color: #000;
 }
 .header__nav-logo {
   font-family: "Clicker Script", regular;
