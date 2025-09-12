@@ -1,0 +1,70 @@
+@use 'sass:color';
+
+@use '../variables' as var;
+@use '../mixins' as mix;
+
+.footer {
+    background-image: url('../../../assets/fotter_image.png');
+    background-size: cover;
+    background-color: color.adjust(var.$accent, $alpha: 0.8);
+    background-blend-mode: soft-light;
+    padding-bottom: var.rem(72);
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        gap: var.rem(66);
+        position: relative;
+        margin-left: var.rem(93);
+    }
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+        margin-top: var.rem(162);
+    }
+
+    &__logo {
+        @include mix.text(var.$font-accent, var.rem(54), var.$main);
+    }
+
+    &__desc {
+        @include mix.text(var.$font-main, var.rem(14), var.$main);
+        line-height: var.rem(22);
+        margin-top: var.rem(20);
+    }
+
+    &__media {
+        display: flex;
+        flex-direction: row;
+        gap: var.rem(20);
+        margin-top: var.rem(20);
+    }
+
+    &__title {
+        @include mix.text(var.$font-main, var.rem(26), var.$main);
+        font-weight: bold;
+    }
+
+    &__option {
+        @include mix.text(var.$font-main, var.rem(18), var.$main);
+        margin-top: var.rem(55);
+    }
+
+    &__address {
+        @include mix.text(var.$font-main, var.rem(18), var.$main);
+        margin-top: var.rem(31);
+    }
+
+    &__decoration--left {
+        position: absolute;
+        margin-top: var.rem(-750);
+    }
+
+    &__decoration--right {
+        position: absolute;
+        transform: scaleX(-1);
+        right: 0;
+        margin-top: var.rem(-750);
+    }
+}
