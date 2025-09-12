@@ -51,6 +51,7 @@
     &__decoration--left {
         position: absolute;
         margin-top: var.rem(-200);
+        z-index: -1;
     }
 
     &__products {
@@ -81,6 +82,7 @@
         margin-top: var.rem(-80);
         right: 0;
         transform: scaleX(-1);
+        z-index: -1;
     }
 
     &__advantages {
