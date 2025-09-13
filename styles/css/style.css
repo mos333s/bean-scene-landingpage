@@ -412,8 +412,7 @@
   margin-top: 2.8125rem;
   margin-left: 12.0625rem;
   margin-right: 12.0625rem;
-  display: flex;
-  flex-direction: column;
+  min-height: 32.75rem;
   position: relative;
 }
 .feedback__quote {
@@ -423,6 +422,13 @@
   font-weight: bold;
   margin-left: 1.8125rem;
   position: absolute;
+}
+.feedback__card-content {
+  display: flex;
+  flex-direction: column;
+}
+.feedback__card-content.hidden {
+  display: none;
 }
 .feedback__text {
   font-family: "Playfair Display", serif;
@@ -434,25 +440,31 @@
   line-height: 2.25rem;
 }
 .feedback__author {
+  position: absolute;
   font-family: "Playfair Display", serif;
   font-size: 2rem;
   color: #603809;
   font-weight: bold;
-  text-align: center;
-  margin-top: 1.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 8.6875rem;
 }
 .feedback__position {
+  position: absolute;
   font-family: "Playfair Display", serif;
   font-size: 1.25rem;
   color: #707070;
-  text-align: center;
-  margin-top: 0.25rem;
-  margin-bottom: 6.3125rem;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 6.3125rem;
 }
 .feedback__image {
   position: absolute;
   bottom: -3.125rem;
   left: 31.875rem;
+}
+.feedback__image.rounded-image {
+  border-radius: 16px;
 }
 .feedback__button--left, .feedback__button--right {
   position: absolute;

@@ -32,8 +32,7 @@
         margin-top: var.rem(45);
         margin-left: var.rem(193);
         margin-right: var.rem(193);
-        display: flex;
-        flex-direction: column;
+        min-height: var.rem(524);
         position: relative;
     }
 
@@ -42,6 +41,15 @@
         font-weight: bold;
         margin-left: var.rem(29);
         position: absolute;
+    }
+
+    &__card-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__card-content.hidden {
+        display: none;
     }
 
     &__text {
@@ -53,23 +61,30 @@
     }
 
     &__author {
+        position: absolute;
         @include mix.text(var.$font-main, var.rem(32), var.$accent);
         font-weight: bold;
-        text-align: center;
-        margin-top: var.rem(28);
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: var.rem(139);
     }
 
     &__position {
+        position: absolute;
         @include mix.text(var.$font-main, var.$font-size, var.$secondary);
-        text-align: center;
-        margin-top: var.rem(4);
-        margin-bottom: var.rem(101);
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: var.rem(101);
     }
 
     &__image {
         position: absolute;
         bottom: calc(var.rem(-50));
         left: calc(var.rem(510))
+    }
+
+    &__image.rounded-image {
+        border-radius: 16px;
     }
 
     &__button--left, &__button--right {
