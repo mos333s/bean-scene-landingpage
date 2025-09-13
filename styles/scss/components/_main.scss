@@ -2,6 +2,8 @@
 @use '../mixins' as mix;
 
 .main {
+    scroll-margin-top: var.rem(-500);
+
     &__content {
         position: relative;
     }

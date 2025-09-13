@@ -9,6 +9,31 @@
     color: $color;
 }
 
+// Link styling mixin
+// @param family - font family
+// @param size - font size value
+// @param color - font color value
+@mixin link($family, $size, $color) {
+    text-decoration: none;
+    font-family: $family;
+    font-size: $size;
+    color: $color;
+
+    &:hover {
+        transition: 0.3s ease;
+        color: #BB6C11;
+    }
+}
+
+// Button styling mixin
+// @param family - button text font family
+// @param size - button text font size
+// @param color - button text color
+// @param radius - button border-radius
+// @param bg-color - button background color
+// @param w - button width
+// @param h - button heigh
+// @param hover-color - button hover color
 @mixin button($family, $size, $color, $radius, $bg-color, $w, $h, $hover-color) {
     @include text($family, $size, $color);
     border: none;

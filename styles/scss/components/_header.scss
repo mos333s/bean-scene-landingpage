@@ -24,12 +24,12 @@
     }
 
     &__nav-link {
-        @include mix.text(var.$font-main, var.rem(14), var.$main);
+        @include mix.link(var.$font-main, var.rem(14), var.$main);
         padding: var.rem(60);
     }
 
     &__nav-auth {
-        @include mix.text(var.$font-main, var.rem(14), var.$main);
+        @include mix.link(var.$font-main, var.rem(14), var.$main);
         padding: var.rem(35);
     }
 
